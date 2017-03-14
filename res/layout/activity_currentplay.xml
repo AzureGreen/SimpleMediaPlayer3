@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/stars"  >
+     
+    <RelativeLayout
+         android:id="@+id/ReturnButtonLayout"
+         android:layout_width="match_parent"
+         android:layout_height="55dp"
+         android:layout_alignParentTop="true"
+          >
+    
+        <Button 
+            android:id="@+id/buttonReturn"
+            android:layout_height="30dp" 
+            android:layout_width="40dp"  
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="8dp"
+            android:background="@drawable/backcurrent" />
+        
+       <RelativeLayout  
+            android:id="@+id/musicAboutLayout"  
+            android:layout_width="match_parent"  
+            android:layout_height="match_parent"  
+            android:layout_alignParentTop="true"  
+            android:layout_alignTop="@+id/buttonReturn"  
+            android:layout_toRightOf="@id/buttonReturn" >  
+  
+            <TextView  
+                android:id="@+id/textCurrentMusicTile"  
+                android:layout_width="wrap_content"  
+                android:layout_height="wrap_content"  
+                android:layout_alignParentLeft="true"  
+                android:layout_marginTop="5.0dp"  
+                android:layout_marginLeft="5.0dp" 
+                android:textColor="#FFFFFF"
+                android:textSize="16dp" 
+                android:text="Music"/>  
+            <TextView  
+                android:id="@+id/textCurrentArtist"  
+                android:layout_width="wrap_content"  
+                android:layout_height="wrap_content"  
+                android:layout_below="@id/textCurrentMusicTile"                  
+                android:layout_alignParentLeft="true"  
+                android:layout_marginLeft="5.0dp"  
+                android:layout_marginTop="8.0dp"  
+                android:textColor="#FFFFFF"
+                android:text="Artist"/>  
+        </RelativeLayout>  
+        
+    
+    </RelativeLayout>
+    
+     <ImageView  
+        android:id="@+id/currentMusicAlbum"  
+        android:layout_width="260dp"  
+        android:layout_height="260dp"  
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="80dp"
+        android:src="@drawable/ic_launcher" >  
+        
+    </ImageView> 
+
+     <RelativeLayout
+         android:id="@+id/ControlButtonLayout"
+         android:layout_width="match_parent"
+         android:layout_height="55dp"
+         android:layout_alignParentBottom="true"
+         android:layout_marginBottom="10dp"
+          >
+         
+         <Button
+            android:id="@+id/buttonCurrentPauseOrPlay"
+            android:layout_height="80dp" 
+            android:layout_width="80dp"  
+            android:layout_alignParentBottom="true"  
+			android:layout_centerHorizontal="true"
+            android:background="@drawable/pausecurrent" /> 
+         
+         <Button
+            android:id="@+id/buttonCurrentNext"
+            android:layout_height="60dp" 
+            android:layout_width="60dp"  
+            android:layout_alignParentBottom="true"  
+			android:layout_toRightOf="@id/buttonCurrentPauseOrPlay"
+            android:background="@drawable/nextcurrent" /> 
+            
+          <Button
+            android:id="@+id/buttonCurrentPre"
+            android:layout_height="60dp" 
+            android:layout_width="60dp"  
+            android:layout_alignParentBottom="true"  
+			android:layout_toLeftOf="@id/buttonCurrentPauseOrPlay"
+            android:background="@drawable/previouscurrent" /> 
+         
+        </RelativeLayout>
+    
+
+</RelativeLayout>

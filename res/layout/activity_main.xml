@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+     <ListView  
+        android:id="@+id/musicList"  
+        android:layout_width="match_parent"  
+        android:layout_height="wrap_content"  
+        android:layout_marginBottom="50dp"
+        android:background="#F5F5F5" >  
+    </ListView> 
+    
+    
+    <RelativeLayout  
+        android:id="@+id/singleSongLayout"  
+        android:layout_width="match_parent"  
+        android:layout_height="wrap_content"  
+        android:layout_alignParentBottom="true" >  
+  
+        <ImageView  
+            android:id="@+id/musicAlbum"  
+            android:layout_width="50dp"  
+            android:layout_height="50dp"  
+            android:layout_alignParentBottom="true"  
+            android:layout_alignParentLeft="true"  
+            android:src="@drawable/ic_launcher" />  
+  
+  
+        <RelativeLayout  
+            android:id="@+id/musicAboutLayout"  
+            android:layout_width="match_parent"  
+            android:layout_height="match_parent"  
+            android:layout_alignParentBottom="true"  
+            android:layout_alignTop="@+id/musicAlbum"  
+            android:layout_toRightOf="@id/musicAlbum" >  
+  
+            <TextView  
+                android:id="@+id/textMusicTile"  
+                android:layout_width="wrap_content"  
+                android:layout_height="wrap_content"  
+                android:layout_alignParentLeft="true"  
+                android:layout_marginTop="5.0dp"  
+                android:layout_marginLeft="5.0dp"  
+                android:text="Music"/>  
+            <TextView  
+                android:id="@+id/textArtist"  
+                android:layout_width="wrap_content"  
+                android:layout_height="wrap_content"  
+                android:layout_below="@id/textMusicTile"                  
+                android:layout_alignParentLeft="true"  
+                android:layout_marginLeft="5.0dp"  
+                android:layout_marginTop="8.0dp"  
+                android:text="Artist"/>  
+        </RelativeLayout>  
+  
+  
+        <Button 
+            android:id="@+id/buttonNext"
+            android:layout_height="40dp" 
+            android:layout_width="40dp" 
+            android:layout_marginBottom="8.0dp" 
+            android:layout_alignParentBottom="true"  
+            android:layout_alignParentRight="true"  
+            android:background="@drawable/next" />
+        
+        <Button
+            android:id="@+id/buttonPauseOrPlay"
+            android:layout_height="50dp" 
+            android:layout_width="50dp"  
+            android:layout_alignParentBottom="true"  
+            android:layout_toLeftOf="@+id/buttonNext"  
+            android:background="@drawable/play" /> 
+            
+        <Button
+            android:id="@+id/buttonJump"
+            android:layout_height="40dp" 
+            android:layout_width="40dp"  
+            android:layout_alignParentBottom="true"  
+            android:layout_toLeftOf="@+id/buttonPauseOrPlay"  
+            android:background="@drawable/jump" />  
+  
+    </RelativeLayout>  
+    
+    
+    
+
+</RelativeLayout >
